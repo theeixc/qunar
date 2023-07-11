@@ -1,0 +1,11 @@
+.app__loading-container {
+  width: 1rem;
+  height: 1rem;
+
+  div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

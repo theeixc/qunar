@@ -1,0 +1,135 @@
+.app__cardlist-container {
+  margin-top: 105px;
+  padding-bottom: 48px;
+  background-clip: content-box;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-family: PingFang SC, arial, helvetica, STHeitiSC-Light, Heiti SC,
+    droidsansfallback, dengxian, microsoft yahei;
+}
+
+.app__cardlist-listItem {
+  padding: 10px 15px;
+  height: 77px;
+  border-bottom: 1px solid rgba(197, 197, 196, 0.3);
+  display: flex;
+
+  .item-info {
+    flex: 5;
+    .airpot-info {
+      display: flex;
+
+      .time-text {
+        line-height: 20px;
+        font-size: 20px;
+        color: #333;
+      }
+      .place-text {
+        font-size: 12px;
+        line-height: 14px;
+        color: #999;
+        margin: 6px 0;
+      }
+
+      .from-info {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .time-info {
+        width: 39%;
+        position: relative;
+        color: #999;
+        .time-info-duration {
+          position: relative;
+          text-align: center;
+          transform: scale(0.8);
+          font-size: 12px;
+        }
+
+        .time-info-arrow {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+
+          height: 12px;
+
+          .arrow-icon {
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #999;
+
+            &::after {
+              content: "";
+              display: block;
+              width: 6px;
+              height: 6px;
+              transform-origin: bottom right;
+              border-right: 1px solid #999;
+              transform: rotate(-60deg);
+              float: right;
+            }
+          }
+
+          .isTrans {
+            position: absolute;
+            left: 50%;
+            z-index: 2;
+            font-size: 12px;
+            color: #1ba9ba;
+            transform: translateX(-50%) scale(0.8);
+          }
+        }
+
+        .trans-city {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+
+      .to-info {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    .company-info {
+      color: #999;
+      font-size: 10px;
+    }
+  }
+
+  .item-price {
+    flex: 2;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .price-text {
+      font-size: 20px;
+      color: #ff8205;
+    }
+    .discont-text {
+      font-size: 12px;
+      color: #999;
+    }
+    .increasing-text {
+      font-size: 12px;
+      color: #fff;
+      background-color: #ff8205;
+      border-radius: 2.5px;
+    }
+  }
+}
+
+.app__cardlist-bottom {
+  margin-top: 10px;
+}

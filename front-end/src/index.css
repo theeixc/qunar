@@ -1,0 +1,7 @@
+:root {
+  --text-color: "#999";
+}
+
+* {
+  box-sizing: border-box;
+}
